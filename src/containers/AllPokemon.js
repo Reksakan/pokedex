@@ -12,7 +12,7 @@ const AllPokemon = () => {
 
   useEffect(() => {
     getPokemons().then((data) => {
-      setPokemons(data.results)
+      setPokemons(data.results);
     });
   },[]);
 
