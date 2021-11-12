@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom';
 const AllPokemon = () => {
   
   const location = useLocation();
-  console.log('location: ', location)
 
   const [pokemons, setPokemons] = useState([]);
 
@@ -15,8 +14,6 @@ const AllPokemon = () => {
       setPokemons(data.results)
     });
   },[]);
-
-  console.log('pokemons', pokemons)
   
   return (
     <div>
